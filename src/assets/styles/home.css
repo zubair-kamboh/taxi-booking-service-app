@@ -1,0 +1,294 @@
+.home-container {
+  background-color: var(--bg-color);
+  padding: 10px;
+}
+
+/* hero section start */
+.hero-container {
+  background: url('../images/hero-bg.svg');
+  height: 80vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: center center;
+  position: relative;
+  pointer-events: none;
+}
+
+.form_container {
+  background: #595959;
+  opacity: 0.9;
+  color: var(--white);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 100px 0px 0px 100px;
+}
+
+/* welcome section start */
+.welcome_container {
+  margin: 1rem 8rem;
+  text-align: center;
+}
+.welcome_container .what_we_offer {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--yello);
+}
+.welcome_container .welcome_to_us {
+  font-weight: 600;
+  font-size: 36px;
+  color: var(--dark);
+}
+.welcome_container .description {
+  font-size: 18px;
+  color: var(--dark);
+  width: 764px;
+  margin: 2.5rem auto;
+}
+.welcome_container .card_title {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--dark);
+  margin: 0.7rem 0rem;
+}
+.welcome_container .card_description {
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 0px;
+}
+
+/* backgroundImgContainer */
+.backgroundImgContainer {
+  padding: 3rem 1rem;
+  margin: 5rem 1rem;
+  background-image: url('../images/car-bg.png');
+  height: 50vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--white);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.backgroundImgContainer .title {
+  font-weight: 600;
+  font-size: 36px;
+  color: var(--white);
+  width: 488px;
+}
+.title .strong {
+  color: var(--yello);
+}
+
+.backgroundImgContainer .description {
+  font-size: 18px;
+  color: var(--white);
+  width: 831.42px;
+}
+
+/* classes_and_rates */
+.classes_rates_container {
+  margin: 5rem 5rem 1rem 5rem;
+}
+.classes_rates_container .classes_rates_card {
+  background: #272727;
+  border-radius: 10px;
+  padding: 30px;
+}
+.classes_rates_card img {
+  width: auto;
+  height: 37px;
+}
+.classes_rates_card p {
+  color: white !important;
+}
+.classes_rates_card .price {
+  font-weight: 600;
+  font-size: 16.3279px;
+  color: var(--yello) !important;
+  margin: 0.7rem 0rem 0rem 0rem;
+}
+
+/* book_now section */
+.book_now_container {
+  background: var(--yello);
+  border-radius: 10px;
+  margin: 0rem 5rem;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.book_now_container .title {
+  font-weight: 600;
+  font-size: 36px;
+  color: var(--dark);
+  margin-bottom: 0px;
+  line-height: 0;
+}
+
+/* Faq section */
+.faq_container {
+  margin: 5rem 5rem 1rem 5rem;
+}
+.faq_inner_contianer {
+  background: #efefef;
+  border: 1px solid #d2d2d2;
+  margin-top: 2rem;
+  box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.04);
+  border-radius: 30px;
+  padding: 40px 50px;
+}
+.faq_container .img_container {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.faq_container .img_container img {
+  padding-right: 8px;
+  cursor: pointer;
+}
+.faq_container .faq_accordion {
+  margin: 5rem 0rem;
+}
+.faq_container .accordion-button:not(.collapsed)::after {
+  background-image: url('../images/faq-minus.png');
+}
+.faq_container .accordion-button::after {
+  background-image: url('../images/faq-plus.png');
+  position: absolute;
+  left: 0;
+}
+.faq_container .accordion-button {
+  background-color: #efefef;
+}
+.faq_container .accordion-button:not(.collapsed) {
+  background-color: #efefef;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: var(--dark);
+}
+.faq_container .accordion-body {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: var(--dark);
+  background-color: #efefef;
+  opacity: 0.6;
+  text-align: start;
+}
+/*
+.accordion-button:focus,
+.accordion-button {
+  border-color: black !important;
+  outline: black !important;
+} */
+
+/* footer */
+.footer_container {
+  background: #272727;
+  color: var(--white);
+  padding: 9rem 0rem 2rem 0rem;
+}
+.footer_container .footer_logo {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.footer_container .footer_description {
+  font-weight: 400;
+  width: 248px;
+}
+.footer_container .icons {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+}
+.footer_container .icons .icon {
+  margin-right: 18px;
+  width: 22px;
+  height: auto;
+  cursor: pointer;
+}
+.footer_container .about_us_heading {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--yello);
+  margin-bottom: 30px;
+}
+.footer_container .navlinks {
+  padding: 0;
+}
+.footer_container .navlinks .navlink {
+  list-style: none;
+}
+.footer_container .navlinks a,
+.footer_container .navlinks .navlink {
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--white);
+  margin-bottom: 7px;
+}
+.footer_container .nav_li {
+  list-style: none;
+  display: flex;
+  margin-bottom: 17px;
+  align-items: center;
+}
+.footer_container .nav_li img {
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+}
+.footer_container .nav_li p {
+  margin-bottom: 0px !important;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  .welcome_container .description {
+    width: 100%;
+  }
+  .welcome_container {
+    margin: 1rem;
+  }
+  .backgroundImgContainer .title {
+    font-size: 36px;
+  }
+  .backgroundImgContainer {
+    margin: 3rem 0rem;
+    height: 100vh;
+    background-size: cover;
+  }
+  .backgroundImgContainer p {
+    width: 100% !important;
+  }
+  .backgroundImgContainer .description {
+    font-size: 15px;
+  }
+  .book_now_container {
+    margin: 0px;
+    flex-direction: column;
+  }
+  .book_now_container h3 {
+    padding: 1rem 0rem;
+  }
+  .book_now_container a {
+    margin-top: 1rem;
+  }
+  .footer_logo_container {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .footer_logo_container p {
+    width: 100% !important;
+  }
+  .footer_logo_container .icons {
+    justify-content: center;
+  }
+}

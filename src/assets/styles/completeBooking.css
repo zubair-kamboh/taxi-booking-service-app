@@ -1,0 +1,94 @@
+.inputfield::-webkit-outer-spin-button,
+.inputfield::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.complete_booking_container {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  padding: 3rem 2.5rem;
+}
+.complete_booking_heading {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: var(--dark27);
+}
+.complete_booking_container .description {
+  font-size: 14px;
+  color: var(--dark27);
+  opacity: 0.89;
+}
+.main_container {
+  position: relative;
+}
+.main_container .middleLine {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 81.49px;
+}
+.main_container .lineFull {
+  width: 100%;
+  position: absolute;
+  top: 0%;
+}
+.pickupdrop_container {
+  padding: 1rem 0rem;
+}
+.pickupdrop_container .wrapper {
+  background: #ffffff;
+  border: 1px solid #f9b233;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.pickupdrop_container .from_to_container {
+  text-align: center;
+}
+
+.passengers_luggage_innerContainer input {
+  width: 30px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+.passengers_luggage_innerContainer .title {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--dark27);
+  margin-bottom: 5px;
+}
+.passengers_luggage_innerContainer .wrapper {
+  background: var(--white);
+  border: 1px solid var(--yello);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.passengers_luggage_innerContainer .wrapper_btn {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #f9b233;
+}
+.passengers_luggage_innerContainer .wrapper_btn:nth-of-type(4) {
+  border-right: none;
+}
+
+.vehicleType_pickup_container {
+  display: flex;
+  align-items: center;
+}
+.vehicleType_pickup_container .wrapper_select {
+  width: 50%;
+}
+.vehicleType_pickup_container .wrapper_select select {
+  border: 1px solid #f9b233;
+  border-radius: 10px;
+}

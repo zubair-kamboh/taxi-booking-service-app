@@ -1,0 +1,32 @@
+.header {
+  background: #f9b233 !important;
+  height: 80px;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--dark);
+  text-transform: uppercase;
+}
+
+.navlinks {
+  flex: 0.6;
+  justify-content: space-evenly;
+}
+
+.navlink {
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.navlink.red {
+  background-color: var(--red);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--white);
+  border-radius: 10px;
+  padding: 12px 26px;
+}
