@@ -3,10 +3,12 @@ import { Row } from 'react-bootstrap'
 import WhatWeOfferCard from './WhatWeOfferCard'
 
 // icons
-import addressPickup from '../assets/images/addresspickup.png'
-import airportTranfer from '../assets/images/airport-transfer.png'
-import longDistance from '../assets/images/long-distance.png'
-import taxiTours from '../assets/images/taxi-tours.png'
+import airTransfer from '../assets/images/airport-transfer.png'
+import privateCar from '../assets/images/private-car.png'
+import point from '../assets/images/point-to-point.png'
+import corp from '../assets/images/corp.png'
+import limo from '../assets/images/limo.png'
+import partyLimosine from '../assets/images/party-lemosine.png'
 
 const WhatWeOffer = () => {
   return (
@@ -18,26 +20,36 @@ const WhatWeOffer = () => {
         letters, as opposed to using 'Content here, content here', making it
         look like readable English.
       </p>
-      <Row>
+      <Row className="g-2">
         <WhatWeOfferCard
-          icon={addressPickup}
-          title="Address Pickup"
-          description="Lorem Ipsum is that it has a more-or- of letters"
+          icon={airTransfer}
+          title="Airport Transportation"
+          description="Amet minim mollit non deserunt ullamco est sit ewv."
         />
         <WhatWeOfferCard
-          icon={airportTranfer}
-          title="Airport Transfer"
-          description="Lorem Ipsum is that it has a more-or- of letters"
+          icon={privateCar}
+          title="Private Car"
+          description="Amet minim mollit non deserunt ullamco est sit ewv."
         />
         <WhatWeOfferCard
-          icon={longDistance}
-          title="Long Distance"
-          description="Lorem Ipsum is that it has a more-or- of letters"
+          icon={point}
+          title="Point to Point"
+          description="Amet minim mollit non deserunt ullamco est sit ewv."
         />
         <WhatWeOfferCard
-          icon={taxiTours}
-          title="Taxi Tours"
-          description="Lorem Ipsum is that it has a more-or- of letters"
+          icon={corp}
+          title="Corp. Transportation"
+          description="Amet minim mollit non deserunt ullamco est sit ewv."
+        />
+        <WhatWeOfferCard
+          icon={limo}
+          title="Limo Service"
+          description="Amet minim mollit non deserunt ullamco est sit ewv."
+        />
+        <WhatWeOfferCard
+          icon={partyLimosine}
+          title="Party Limousine"
+          description="Amet minim mollit non deserunt ullamco est sit ewv."
         />
       </Row>
     </div>

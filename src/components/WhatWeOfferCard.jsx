@@ -1,12 +1,18 @@
 import React from 'react'
 import { Col } from 'react-bootstrap'
+import HeaderButton from './HeaderButton'
 
 const WelcomeCard = ({ icon, title, description }) => {
   return (
-    <Col md={3} sm={6}>
-      <img src={icon} alt={title} style={{ width: '52px', height: '52px' }} />
-      <p className="card_title">{title}</p>
-      <p className="card_description">{description}</p>
+    <Col lg={4} xs={6}>
+      <div className="whatweoffer_card_wrapper">
+        <img src={icon} alt={title} />
+        <div className="wrapper">
+          <p className="card_title">{title}</p>
+          <p className="card_description">{description}</p>
+          <button>Book Now</button>
+        </div>
+      </div>
     </Col>
   )
 }

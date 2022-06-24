@@ -14,19 +14,44 @@
   position: relative;
   pointer-events: none;
 }
-
 .form_container {
+  pointer-events: all;
   background: #595959;
   opacity: 0.9;
+  width: 400px;
   color: var(--white);
-  padding: 10px;
+  padding: 30px 10px;
   border-radius: 10px;
-  margin: 100px 0px 0px 100px;
+  position: absolute;
+  margin: 90px 50px;
+}
+.hero-container .form_container .get_instant_fare {
+  font-weight: 600;
+  font-size: 28px;
+  color: var(--white);
+}
+.hero-container .form_container .horizental_line {
+  width: 100%;
+}
+.hero-container .passengers_luggage_innerContainer .title,
+.hero-container .name_field_container .title {
+  color: var(--white) !important;
+}
+
+.hero-container .form_container .btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form_container .passengers_luggage_hero_container {
+  display: flex;
+  align-items: center;
 }
 
 /* welcome section start */
 .welcome_container {
-  margin: 1rem 8rem;
+  margin: 5rem 5rem 1rem 5rem;
   text-align: center;
 }
 .welcome_container .what_we_offer {
@@ -45,16 +70,50 @@
   width: 764px;
   margin: 2.5rem auto;
 }
-.welcome_container .card_title {
-  font-weight: 600;
-  font-size: 18px;
-  color: var(--dark);
-  margin: 0.7rem 0rem;
+.whatweoffer_card_wrapper {
+  background: var(--white);
+  padding: 10px;
+  box-shadow: 0px 93.4322px 74.7458px rgba(0, 0, 0, 0.07),
+    0px 34.1043px 27.2834px rgba(0, 0, 0, 0.0482987),
+    0px 16.557px 13.2456px rgba(0, 0, 0, 0.0389404),
+    0px 8.11655px 6.49324px rgba(0, 0, 0, 0.0310596),
+    0px 3.2093px 2.56744px rgba(0, 0, 0, 0.0217013);
+  border-radius: 4.67161px;
+  display: flex;
 }
-.welcome_container .card_description {
-  font-size: 14px;
-  color: #000000;
+.whatweoffer_card_wrapper img {
+  width: 114.82px;
+  height: 110.16px;
+  border-radius: 4.67161px;
+}
+.whatweoffer_card_wrapper .wrapper {
+  display: flex;
+  text-align: start;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.whatweoffer_card_wrapper .wrapper p {
   margin-bottom: 0px;
+}
+.whatweoffer_card_wrapper .wrapper .card_title {
+  font-weight: 600;
+  font-size: 14.9492px;
+  color: #0a0a0a;
+}
+.whatweoffer_card_wrapper .wrapper .card_description {
+  font-size: 13px;
+  color: #616161;
+}
+.whatweoffer_card_wrapper .wrapper button {
+  background: var(--yello);
+  color: var(--white);
+  padding: 5px 8px;
+  border: none;
+  outline: none;
+  width: 99.04px;
+  box-shadow: 0px 0.934322px 1.86864px rgba(0, 0, 0, 0.12);
+  border-radius: 5.60593px;
 }
 
 /* backgroundImgContainer */
@@ -290,5 +349,14 @@
   }
   .footer_logo_container .icons {
     justify-content: center;
+  }
+  .form_container {
+    margin-top: 500px;
+  }
+  .hero-container {
+    background-image: url('../images/hero-bg.png');
+  }
+  .welcome_container {
+    margin-top: 450px;
   }
 }
