@@ -1,0 +1,121 @@
+.air_transport_container {
+  background-color: var(--bg-color);
+}
+.air_transport_container p {
+  margin-bottom: 0px;
+}
+.air_transport_container .hero-container {
+  background-image: url('../images/airport-transfer-hero.svg');
+  min-height: 60vh;
+}
+.air_transport_container .form_container {
+  margin: 150px 50px;
+}
+
+.air_transport_container .fleets_heading {
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center;
+  color: var(--dark);
+  margin-bottom: 1.5rem;
+}
+.air_transport_container .fleets_heading span {
+  color: var(--yello);
+}
+.air_transport_container .at_service_container {
+  margin: 3rem 0rem;
+}
+.air_transport_container .at_service_container .service_des {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: var(--yello);
+}
+.air_transport_container .at_service_container .service_title {
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center;
+  color: var(--dark);
+  margin: 1rem 0rem;
+}
+.air_transport_container .at_service_container .service_title span {
+  color: var(--yello);
+}
+.air_transport_container .service_card_airtransport .left_paragraph {
+  font-size: 16px;
+  line-height: 26px;
+  color: #374157;
+  text-align: justify;
+}
+.air_transport_container .service_card_airtransport {
+  padding: 0px 4rem;
+}
+.air_transport_container .service_card_airtransport .wrapper {
+  border: 4px solid var(--yello);
+  border-radius: 85px;
+  padding: 4px;
+  max-width: 450px;
+  margin-left: auto;
+}
+.air_transport_container .service_card_airtransport .wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.air_transport_container .card_outside_paragraph {
+  font-size: 16px;
+  line-height: 26px;
+  color: #374157;
+  margin-top: 3rem;
+  text-align: justify;
+}
+.air_transport_container .book_now_container {
+  margin: 0rem 4rem !important;
+}
+.air_transport_container .main_concern_heading {
+  font-weight: 600;
+  font-size: 28px;
+  color: var(--dark27);
+}
+.air_transport_container .main_concern_container {
+  margin: 2rem 4rem;
+}
+.air_transport_container .main_concern_container .card_outside_paragraph {
+  margin-top: 1rem;
+}
+.air_transport_container .area_wrapper {
+  background: var(--white);
+  border: 1px solid var(--yello);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .hero-container {
+    background-image: url('../images/airport-transfer-hero-mobile.png') !important;
+  }
+  .form_container {
+    width: 100%;
+    margin: 0px !important;
+    top: 90%;
+  }
+  .slider_container {
+    margin-top: 550px;
+  }
+  .service_title {
+    font-size: 20px !important;
+  }
+  .service_card_airtransport {
+    padding: 0rem 0rem !important;
+  }
+  .air_transport_container .book_now_container {
+    margin: 0rem 0rem !important;
+  }
+  .air_transport_container .main_concern_container {
+    margin: 2rem 0rem;
+  }
+}
+@media screen and (max-width: 770px) {
+  .slider_container {
+    margin-top: 700px;
+  }
+}

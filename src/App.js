@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import CompleteBooking from './pages/CompleteBooking'
 import FarePage from './pages/FarePage'
+import AirportTransport from './pages/AirportTransport'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/complete-booking" element={<CompleteBooking />} />
           <Route path="/fare-page" element={<FarePage />} />
+          <Route path="/airport-transport" element={<AirportTransport />} />
         </Routes>
         <Footer />
       </Router>

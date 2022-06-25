@@ -42,6 +42,9 @@
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
+  .fair_page_container {
+    padding: 3rem 0.5rem !important;
+  }
   .fair_page_container .recent_trip_heading {
     position: static !important;
   }
