@@ -1,9 +1,7 @@
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import { Col } from 'react-bootstrap'
 
 import HeaderButton from './HeaderButton'
-
-import 'react-datepicker/dist/react-datepicker.css'
 
 import 'date-fns'
 import DateFnsUtils from '@date-io/date-fns'
@@ -36,6 +34,7 @@ const PassengersCounter = ({ title }) => {
           ? 12
           : 6
       }
+      xs={12}
     >
       <div
         className={

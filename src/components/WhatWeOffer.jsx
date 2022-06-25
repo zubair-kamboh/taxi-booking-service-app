@@ -12,7 +12,7 @@ import partyLimosine from '../assets/images/party-lemosine.png'
 
 const WhatWeOffer = () => {
   return (
-    <div className="welcome_container">
+    <div className="welcome_container welcome_specific">
       <h5 className="what_we_offer">WHAT WE OFFER</h5>
       <h3 className="welcome_to_us">WELCOME TO US</h3>
       <p className="description">

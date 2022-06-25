@@ -8,7 +8,7 @@ const LuggageCounter = ({ title, home }) => {
   const [input, setInput] = useState(1)
 
   return (
-    <Col sm={6}>
+    <Col sm={6} xs={12}>
       <div
         className={`passengers_luggage_innerContainer ${
           home === true ? 'ms-1' : 'ms-3'

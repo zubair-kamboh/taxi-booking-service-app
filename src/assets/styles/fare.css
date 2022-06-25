@@ -1,0 +1,77 @@
+.fair_page_container {
+  background-color: var(--bg-color);
+  padding: 3rem 1.5rem;
+}
+.fair_page_container .from_to_title {
+  font-weight: 600;
+  font-size: 28px;
+  color: var(--dark27);
+}
+.fair_page_container .from_to_title span {
+  background: var(--yello);
+  color: var(--white);
+  padding: 10px 14px;
+  border-radius: 9.01764px;
+}
+
+/* form details section */
+.form_details_container .hero-container {
+  background-image: none;
+  height: auto;
+}
+.form_details_container .form_container {
+  margin: 2rem 0rem;
+  width: 100%;
+  position: static;
+}
+.form_details_container .details_container {
+  margin: 2rem 0rem;
+  background: var(--white);
+  border: 1px solid var(--yello);
+  border-radius: 10px;
+  padding: 15px;
+}
+.form_details_container .details_container p {
+  font-size: 16px;
+  color: #374157;
+  line-height: 20.8px;
+}
+.fair_page_container .book_now_container {
+  margin: 0px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+  .fair_page_container .recent_trip_heading {
+    position: static !important;
+  }
+  .fair_page_container .lineFull {
+    margin: 0px !important;
+  }
+  .fair_page_container .from_to_title {
+    display: flex;
+    flex-direction: column;
+  }
+  .stack_luggage_passenger {
+    flex-direction: column;
+  }
+  .fair_page_container .btns {
+    flex-direction: column;
+  }
+  .vehicleType_pickup_container {
+    flex-direction: column;
+  }
+  .vehicleType_pickup_container div {
+    width: 100%;
+  }
+  .vehicleType_pickup_container .wrapper_select {
+    margin: 5px 0px 0px 0px;
+  }
+  .fair_page_container .nav-link {
+    width: 100%;
+    text-align: center;
+  }
+  .book_now_container .title {
+    font-size: 20px;
+  }
+}

@@ -414,3 +414,19 @@
     color: var(--dark27);
   }
 }
+@media screen and (max-width: 550px) {
+  .pickupdrop_container input {
+    font-size: 10px;
+  }
+  .complete_booking_container .name_field_container {
+    margin: 0px !important;
+  }
+  .complete_booking_container .btns {
+    flex-direction: column;
+  }
+  .complete_booking_container .btns .nav-link {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}

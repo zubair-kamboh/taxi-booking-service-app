@@ -13,9 +13,8 @@ import LuggageCounter from '../components/LuggageCounter'
 import EstimatedFare from '../components/EstimatedFare'
 import NameDate from '../components/NameDate'
 import InstructionsOrder from '../components/InstructionsOrder'
-import RecentTrips from '../components/RecentTrips'
-import HeaderButton from '../components/HeaderButton'
 import VehiclePickupSelect from '../components/VehiclePickupSelect'
+import RecentTripsContainer from '../components/RecentTripsContainer'
 
 const CompleteBooking = () => {
   return (
@@ -61,7 +60,12 @@ const CompleteBooking = () => {
 
           <Row style={{ marginBottom: '2rem' }} className="g-2">
             {/* passengers_luggage */}
-            <Col lg={5} sm={12} style={{ display: 'flex' }}>
+            <Col
+              lg={5}
+              xs={12}
+              style={{ display: 'flex' }}
+              className="stack_luggage_passenger"
+            >
               <PassengersCounter title="Passengers" />
               <LuggageCounter title="Luggage Pieces" />
             </Col>
@@ -88,41 +92,7 @@ const CompleteBooking = () => {
           />
         </div>
 
-        <div className="recenttrip_container">
-          <img
-            src={lineFull}
-            className="lineFull"
-            alt="lineFull"
-            style={{ width: '100%' }}
-          />
-          <h3 className="recent_trip_heading">
-            Recent Trips <span>Book</span>ed Near You!
-          </h3>
-          <img
-            src={lineFull}
-            className="lineFull"
-            alt="lineFull"
-            style={{ width: '100%', margin: '50px 0px 20px 0px' }}
-          />
-        </div>
-        <RecentTrips />
-        <RecentTrips />
-        <RecentTrips />
-        <RecentTrips />
-        <RecentTrips />
-        <img
-          src={middleLine}
-          className="middleLine"
-          style={{
-            position: 'absolute',
-            top: '161%',
-            left: '50%',
-            transform: 'translateX(-50%)',
-          }}
-          alt="middleLine"
-        />
-
-        <HeaderButton title="Load More" color="#FFFFFF" bg="#F9B233" />
+        <RecentTripsContainer />
       </div>
     </Container>
   )

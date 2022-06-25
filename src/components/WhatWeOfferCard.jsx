@@ -4,7 +4,7 @@ import HeaderButton from './HeaderButton'
 
 const WelcomeCard = ({ icon, title, description }) => {
   return (
-    <Col lg={4} xs={6}>
+    <Col lg={4} xs={12}>
       <div className="whatweoffer_card_wrapper">
         <img src={icon} alt={title} />
         <div className="wrapper">

@@ -360,3 +360,48 @@
     margin-top: 450px;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .complete_booking_container {
+    padding: 3rem 1rem !important;
+  }
+  .form_container {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .welcome_specific {
+    margin-top: 600px;
+  }
+  .welcome_container .description {
+    width: 100%;
+  }
+  .hero-container .nav-link {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-container .btns {
+    flex-direction: column;
+  }
+  .stack_luggage_passenger div {
+    width: 100% !important;
+  }
+  .classes_rates_container,
+  .faq_container {
+    margin: 0px;
+  }
+  .faq_container {
+    margin: 10px 0px;
+  }
+  .faq_inner_contianer {
+    padding: 0.5rem;
+  }
+  .destinations_container .right p {
+    font-size: 10px !important;
+  }
+  .passengers_luggage_innerContainer.ms-3 {
+    margin: 10px 0px !important;
+  }
+  .vehicleType_pickup_container .wrapper_select {
+    margin: 10px 0px !important;
+  }
+}
