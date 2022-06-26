@@ -10,9 +10,9 @@ import Destinations from './Destinations'
 import VehiclePickupSelect from './VehiclePickupSelect'
 import HeaderButton from './HeaderButton'
 
-const Hero = ({ farePage }) => {
+const Hero = ({ farePage, home }) => {
   return (
-    <div className="hero-container">
+    <div className={`hero-container ${home === true ? 'home_specific' : ''}`}>
       {farePage === true ? (
         <Row className="gx-5">
           <Col lg={5} xs={12}>

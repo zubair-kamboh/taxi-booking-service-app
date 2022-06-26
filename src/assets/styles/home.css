@@ -8,7 +8,7 @@
   background: url('../images/hero-bg.svg');
   height: 80vh;
   background-size: contain;
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
   background-origin: center center;
   position: relative;
@@ -23,7 +23,8 @@
   padding: 30px 10px;
   border-radius: 10px;
   position: absolute;
-  margin: 90px 50px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .hero-container .form_container .get_instant_fare {
   font-weight: 600;
@@ -241,12 +242,6 @@
   opacity: 0.6;
   text-align: start;
 }
-/*
-.accordion-button:focus,
-.accordion-button {
-  border-color: black !important;
-  outline: black !important;
-} */
 
 /* footer */
 .footer_container {
@@ -355,9 +350,17 @@
   }
   .hero-container {
     background-image: url('../images/hero-bg.png');
+    background-size: cover;
   }
   .welcome_container {
     margin-top: 450px;
+  }
+  .home_specific {
+    background-position: center;
+  }
+  .hero-container .btns a {
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -366,11 +369,12 @@
     padding: 3rem 1rem !important;
   }
   .form_container {
-    margin-left: 0px;
+    /* margin-left: 0px; */
     width: 100%;
+    transform: translateY(0%);
   }
   .welcome_specific {
-    margin-top: 600px;
+    margin-top: 800px;
   }
   .welcome_container .description {
     width: 100%;

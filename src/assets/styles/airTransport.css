@@ -10,7 +10,8 @@
   object-fit: cover;
 }
 .air_transport_container .form_container {
-  margin: 150px 50px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .air_transport_container .fleets_heading {
@@ -145,6 +146,14 @@
   }
   .air_transport_container .main_concern_container {
     margin: 2rem 0rem;
+  }
+  .air_transport_container .form_container {
+    top: 90%;
+    transform: translateY(0);
+  }
+  .air_transport_container .btns a {
+    width: 100%;
+    text-align: center;
   }
 }
 @media screen and (max-width: 770px) {
