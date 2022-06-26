@@ -1,21 +1,6 @@
 import { Col, Row } from 'react-bootstrap'
-import serviceImg from '../assets/images/airport-transfer-service-card-img.png'
 
-const ATService = () => {
-  return (
-    <div className="at_service_container">
-      <p className="service_des">Service</p>
-      <h4 className="service_title">
-        Airport <span>Transportation</span> Services
-        <br /> in Sydney
-      </h4>
-
-      <Card />
-    </div>
-  )
-}
-
-const Card = () => {
+const ATService = ({ img }) => {
   return (
     <div className="service_card_airtransport">
       <Row className="g-2" style={{ alignItems: 'center' }}>
@@ -43,7 +28,7 @@ const Card = () => {
         </Col>
         <Col lg={6} xs={12}>
           <div className="wrapper">
-            <img src={serviceImg} alt="serviceImg" />
+            <img src={img} alt={img} />
           </div>
         </Col>
       </Row>

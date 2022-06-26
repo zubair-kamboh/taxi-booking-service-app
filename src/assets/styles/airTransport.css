@@ -7,6 +7,7 @@
 .air_transport_container .hero-container {
   background-image: url('../images/airport-transfer-hero.svg');
   min-height: 60vh;
+  object-fit: cover;
 }
 .air_transport_container .form_container {
   margin: 150px 50px;
@@ -89,9 +90,28 @@
   padding: 10px 20px;
 }
 
+/* private car page style */
+.private_car_container .hero-container {
+  background-image: url('../images/private-car-hero.svg');
+}
+.point_to_point_container .hero-container {
+  background-image: url('../images/point-to-point-hero.png');
+}
+.corp_trans_container .hero-container {
+  background-image: url('../images/corp-trans-hero.svg');
+}
+.party_limosine_container .hero-container {
+  background-image: url('../images/party-lemosine-hero.svg');
+}
+.limo_service_container .hero-container {
+  background-image: url('../images/limo-service-hero.svg');
+}
+
 @media screen and (max-width: 900px) {
   .hero-container {
     background-image: url('../images/airport-transfer-hero-mobile.png') !important;
+    height: 40vh;
+    min-height: 40vh !important;
   }
   .form_container {
     width: 100%;

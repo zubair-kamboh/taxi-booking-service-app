@@ -6,6 +6,11 @@ import Footer from './components/Footer'
 import CompleteBooking from './pages/CompleteBooking'
 import FarePage from './pages/FarePage'
 import AirportTransport from './pages/AirportTransport'
+import PrivateCar from './pages/PrivateCar'
+import PointToPoint from './pages/PointToPoint'
+import LimoService from './pages/LimoService'
+import PartyLimoSine from './pages/PartyLimoSine'
+import CorporateTransportation from './pages/CorporateTransportation'
 
 function App() {
   return (
@@ -17,6 +22,14 @@ function App() {
           <Route path="/complete-booking" element={<CompleteBooking />} />
           <Route path="/fare-page" element={<FarePage />} />
           <Route path="/airport-transport" element={<AirportTransport />} />
+          <Route path="/private-car" element={<PrivateCar />} />
+          <Route path="/point-to-point" element={<PointToPoint />} />
+          <Route
+            path="/corporate-transportation"
+            element={<CorporateTransportation />}
+          />
+          <Route path="/limo-service" element={<LimoService />} />
+          <Route path="/party-limosine" element={<PartyLimoSine />} />
         </Routes>
         <Footer />
       </Router>

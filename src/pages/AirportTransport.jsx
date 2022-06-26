@@ -7,13 +7,24 @@ import ATService from '../components/ATService'
 import BookNow from '../components/BookNow'
 import Area from '../components/Area'
 
+import serviceImg from '../assets/images/airport-transfer-service-card-img.png'
+
 const AirportTransport = () => {
   return (
     <Container>
       <div className="air_transport_container">
         <Hero />
         <Slider />
-        <ATService />
+
+        <div className="at_service_container">
+          <p className="service_des">Service</p>
+          <h4 className="service_title">
+            Airport <span>Transportation</span> Services
+            <br /> in Sydney
+          </h4>
+
+          <ATService img={serviceImg} />
+        </div>
         <BookNow />
 
         <div className="main_concern_container">
