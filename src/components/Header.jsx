@@ -17,16 +17,21 @@ const Header = () => {
             <NavLink className="navlink" to="/">
               Home
             </NavLink>
-            <NavLink className="navlink" to="/complete-booking">
+            <NavLink className="navlink" to="/">
               Services
             </NavLink>
-            <NavLink className="navlink" to="#link">
+            <NavLink className="navlink" to="/about-us">
               About
             </NavLink>
-            <NavLink className="navlink" to="#link">
+            <NavLink className="navlink" to="/contact-us">
               Contact
             </NavLink>
-            <HeaderButton title="Book My Ride" color="#FFFFFF" bg="#DC2827" />
+            <HeaderButton
+              title="Book My Ride"
+              color="#FFFFFF"
+              bg="#DC2827"
+              to="/complete-booking"
+            />
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -12,6 +12,7 @@ import LimoService from './pages/LimoService'
 import PartyLimoSine from './pages/PartyLimoSine'
 import CorporateTransportation from './pages/CorporateTransportation'
 import ContactUs from './pages/ContactUs'
+import About from './pages/About'
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/limo-service" element={<LimoService />} />
           <Route path="/party-limosine" element={<PartyLimoSine />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/about-us" element={<About />} />
         </Routes>
         <Footer />
       </Router>

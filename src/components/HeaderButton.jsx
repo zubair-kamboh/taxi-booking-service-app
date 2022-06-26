@@ -1,9 +1,10 @@
 import React from 'react'
 import { Nav } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom'
 
-const HeaderButton = ({ color, bg, title }) => {
+const HeaderButton = ({ color, bg, title, to }) => {
   return (
-    <Nav.Link
+    <NavLink
       className={`navlink ${
         title === 'Book Now' ||
         title === 'Book My Ride' ||
@@ -12,14 +13,14 @@ const HeaderButton = ({ color, bg, title }) => {
           ? 'px-5'
           : 'px-4'
       } red ${title === 'Load More' ? 'loadmore_btn' : ''}`}
-      href="#bookmyride"
+      to={to ? to : '/'}
       style={{
         backgroundColor: bg,
         color: color,
       }}
     >
       {title}
-    </Nav.Link>
+    </NavLink>
   )
 }
 

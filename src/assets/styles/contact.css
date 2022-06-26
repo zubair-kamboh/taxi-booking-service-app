@@ -1,6 +1,5 @@
 .contact_page {
   border-top: 1px solid var(--dark);
-  /* height: 100vh; */
   min-height: 100vh;
 }
 .contact_page p {
@@ -18,7 +17,7 @@
   clip-path: polygon(0% 0%, 100% 0%, 100% 55%, 50% 70%, 0 55%);
 }
 
-.contact_form_outside_wrapper .heading {
+.contact_page .heading {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
@@ -28,7 +27,7 @@
   padding: 6rem 0rem 2rem 0rem;
 }
 
-.contact_form_outside_wrapper .description {
+.contact_page .description {
   font-weight: 400;
   font-size: 18px;
   text-align: center;
@@ -122,7 +121,7 @@ textarea {
 }
 
 @media screen and (max-width: 900px) {
-  .contact_form_outside_wrapper .heading {
+  .contact_page .heading {
     font-size: 26px;
     padding: 3rem 0rem 1rem 0rem;
   }
@@ -132,11 +131,11 @@ textarea {
     margin: 1rem;
   }
 
-  .contact_form_outside_wrapper .description {
+  .contact_page .description {
     font-size: 16px;
     text-align: justify;
   }
-  .contact_form_outside_wrapper .description br {
+  .contact_page .description br {
     display: none;
   }
 }
