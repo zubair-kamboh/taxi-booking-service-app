@@ -19,7 +19,7 @@ const PrivateCar = () => {
         <div className="at_service_container">
           <p className="service_des">Service</p>
           <h4 className="service_title">
-            <span>Point To Point</span> Services
+            <span>Private Car</span> Services
             <br />
             in Sydney
           </h4>

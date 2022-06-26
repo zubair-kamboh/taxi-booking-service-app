@@ -12,7 +12,7 @@ import serviceImg from '../assets/images/airport-transfer-service-card-img.png'
 const AirportTransport = () => {
   return (
     <Container>
-      <div className="air_transport_container">
+      <div className="air_transport_container at_wrapper">
         <Hero />
         <Slider />
 
