@@ -11,6 +11,7 @@ import PointToPoint from './pages/PointToPoint'
 import LimoService from './pages/LimoService'
 import PartyLimoSine from './pages/PartyLimoSine'
 import CorporateTransportation from './pages/CorporateTransportation'
+import ContactUs from './pages/ContactUs'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           />
           <Route path="/limo-service" element={<LimoService />} />
           <Route path="/party-limosine" element={<PartyLimoSine />} />
+          <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
         <Footer />
       </Router>

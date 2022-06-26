@@ -1,0 +1,29 @@
+ <div className="contactform">
+              <Row className="g-2 gy-4">
+                <ContactInput label="Your name*" placeholder="Julia William" />
+                <ContactInput
+                  label="Contact email *"
+                  placeholder="you@example.com"
+                />
+                <ContactInput
+                  label="Company name*"
+                  placeholder="Company name"
+                />
+                <ContactInput label="Country*" placeholder="Indonesia" />
+                <ContactInput
+                  label="Your message*"
+                  placeholder="Type your message…"
+                />
+              </Row>
+
+              <p className="agreement_heading">
+                By submitting this form you agree to our terms and conditions
+                and our Privacy Policy which explains how we may collect, use
+                and disclose your personal information including to third
+                parties.
+              </p>
+
+              <div style={{ width: '200px', textAlign: 'center' }}>
+                <HeaderButton color="#FFFFFF" bg="#F9B233" title="Submit" />
+              </div>
+            </div>
