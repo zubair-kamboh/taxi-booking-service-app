@@ -16,21 +16,21 @@
   background: #000000;
   border-radius: 9.01764px;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 10px;
   color: #ffffff;
   border: none;
   outline: none;
-  padding: 16px 20px;
+  padding: 16px 16px;
 }
 .bottom_navigation_container .btn2 {
   background: var(--yello);
   border-radius: 9.01764px;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 10px;
   color: #ffffff;
   border: none;
   outline: none;
-  padding: 16px 28px;
+  padding: 16px 22px;
 }
 
 .bottom_navigation_container .home {
@@ -45,7 +45,7 @@
 }
 .bottom_navigation_container .home p {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--dark27);
 }
 .bottom_navigation_container .fare_container .price_wrapper {
@@ -60,7 +60,7 @@
 }
 .bottom_navigation_container .fare_container .price {
   font-weight: 600;
-  font-size: 26px;
+  font-size: 24px;
   color: #f9b233;
 }
 .bottom_navigation_container .fare_container .total_price {
@@ -80,12 +80,7 @@
   }
 }
 @media screen and (max-width: 420px) {
-  .bottom_navigation_container .btn1 {
-    font-size: 12px;
-    padding: 16px 10px;
-  }
-  .bottom_navigation_container .btn2 {
-    font-size: 12px;
-    padding: 16px 10px;
+  .bottom_navigation_container {
+    padding: 0.5rem 0.2rem;
   }
 }
