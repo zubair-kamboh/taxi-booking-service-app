@@ -16,87 +16,91 @@ import InstructionsOrder from '../components/InstructionsOrder'
 import VehiclePickupSelect from '../components/VehiclePickupSelect'
 import RecentTripsContainer from '../components/RecentTripsContainer'
 import EmailPhone from '../components/EmailPhone'
+import BottomNavigation from '../components/BottomNavigation'
 
 const CompleteBooking = () => {
   return (
-    <Container>
-      <div className="complete_booking_container">
-        <h3 className="complete_booking_heading">Complete Your Booking</h3>
-        <p className="description">
-          Please enter your full travel details in the form below to complete
-          your booking.
-        </p>
+    <>
+      <Container>
+        <div className="complete_booking_container">
+          <h3 className="complete_booking_heading">Complete Your Booking</h3>
+          <p className="description">
+            Please enter your full travel details in the form below to complete
+            your booking.
+          </p>
 
-        <div className="main_container">
-          <img src={lineFull} className="lineFull" alt="lineFull" />
-          <img src={middleLine} className="middleLine" alt="middleLine" />
+          <div className="main_container">
+            <img src={lineFull} className="lineFull" alt="lineFull" />
+            <img src={middleLine} className="middleLine" alt="middleLine" />
 
-          <div className="pickupdrop_container">
-            <Row className="g-2">
-              <Col lg={5} xs={12}>
-                <div className="wrapper">
-                  <img src={pickUp} alt="pickUp" />
-                  <input
-                    type="text"
-                    placeholder="Pick Up From (Airport, Port, Address)"
-                  />
-                </div>
+            <div className="pickupdrop_container">
+              <Row className="g-2">
+                <Col lg={5} xs={12}>
+                  <div className="wrapper">
+                    <img src={pickUp} alt="pickUp" />
+                    <input
+                      type="text"
+                      placeholder="Pick Up From (Airport, Port, Address)"
+                    />
+                  </div>
+                </Col>
+                <Col lg={2} xs={12} style={{ zIndex: 10 }}>
+                  <div className="from_to_container">
+                    <img src={fromToIcon} alt="fromToIcon" />
+                  </div>
+                </Col>
+                <Col lg={5} xs={12}>
+                  <div className="wrapper">
+                    <img src={dropOff} alt="dropOff" />
+                    <input
+                      type="text"
+                      placeholder="Drop Off To (Airport, Port, Address)"
+                    />
+                  </div>
+                </Col>
+              </Row>
+            </div>
+
+            <Row style={{ marginBottom: '2rem' }} className="g-2">
+              {/* passengers_luggage */}
+              <Col
+                lg={5}
+                xs={12}
+                style={{
+                  display: 'flex',
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}
+                className="stack_luggage_passenger"
+              >
+                <PassengersCounter title="Passengers" completeBooking={true} />
+                <LuggageCounter title="Luggage Pieces" completeBooking={true} />
               </Col>
-              <Col lg={2} xs={12} style={{ zIndex: 10 }}>
-                <div className="from_to_container">
-                  <img src={fromToIcon} alt="fromToIcon" />
-                </div>
+              <Col lg={2} sm={0}></Col>
+              {/* vehicle_pickup_type */}
+              <Col lg={5} sm={12} style={{ alignSelf: 'flex-end' }}>
+                <VehiclePickupSelect />
               </Col>
-              <Col lg={5} xs={12}>
-                <div className="wrapper">
-                  <img src={dropOff} alt="dropOff" />
-                  <input
-                    type="text"
-                    placeholder="Drop Off To (Airport, Port, Address)"
-                  />
-                </div>
-              </Col>
+              <div className="roundtrip_checkbox_container">
+                <Form.Check type="checkbox" id="checkbox" label="Round Trip" />
+              </div>
             </Row>
+
+            <EstimatedFare />
+
+            {/* first/last name & date/time row */}
+            <NameDate />
+            {/* email phone row */}
+            <EmailPhone />
+            {/* instructions order row */}
+            <InstructionsOrder />
           </div>
 
-          <Row style={{ marginBottom: '2rem' }} className="g-2">
-            {/* passengers_luggage */}
-            <Col
-              lg={5}
-              xs={12}
-              style={{
-                display: 'flex',
-                flexDirection: 'row',
-                alignItems: 'center',
-              }}
-              className="stack_luggage_passenger"
-            >
-              <PassengersCounter title="Passengers" completeBooking={true} />
-              <LuggageCounter title="Luggage Pieces" completeBooking={true} />
-            </Col>
-            <Col lg={2} sm={0}></Col>
-            {/* vehicle_pickup_type */}
-            <Col lg={5} sm={12} style={{ alignSelf: 'flex-end' }}>
-              <VehiclePickupSelect />
-            </Col>
-            <div className="roundtrip_checkbox_container">
-              <Form.Check type="checkbox" id="checkbox" label="Round Trip" />
-            </div>
-          </Row>
-
-          <EstimatedFare />
-
-          {/* first/last name & date/time row */}
-          <NameDate />
-          {/* email phone row */}
-          <EmailPhone />
-          {/* instructions order row */}
-          <InstructionsOrder />
+          <RecentTripsContainer />
         </div>
-
-        <RecentTripsContainer />
-      </div>
-    </Container>
+      </Container>
+      <BottomNavigation />
+    </>
   )
 }
 
