@@ -61,12 +61,7 @@
   .fair_page_container .btns {
     flex-direction: column;
   }
-  .vehicleType_pickup_container {
-    flex-direction: column;
-  }
-  .vehicleType_pickup_container div {
-    width: 100%;
-  }
+
   .vehicleType_pickup_container .wrapper_select {
     margin: 5px 0px 0px 0px;
   }

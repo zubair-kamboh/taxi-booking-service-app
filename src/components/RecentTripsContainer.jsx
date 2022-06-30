@@ -29,19 +29,10 @@ const RecentTripsContainer = () => {
       <RecentTrips />
       <RecentTrips />
       <RecentTrips />
-      <img
-        src={middleLine}
-        className="middleLine"
-        style={{
-          position: 'absolute',
-          top: '161%',
-          left: '50%',
-          transform: 'translateX(-50%)',
-        }}
-        alt="middleLine"
-      />
 
-      <HeaderButton title="Load More" color="#FFFFFF" bg="#F9B233" />
+      <div className="d-flex">
+        <HeaderButton title="Load More" color="#FFFFFF" bg="#F9B233" />
+      </div>
     </div>
   )
 }

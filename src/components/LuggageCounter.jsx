@@ -4,19 +4,23 @@ import plus from '../assets/images/faq-plus.png'
 import minus from '../assets/images/faq-minus.png'
 import luggage from '../assets/images/luggage-icon.png'
 
-const LuggageCounter = ({ title, home }) => {
+const LuggageCounter = ({ title, home, completeBooking }) => {
   const [input, setInput] = useState(1)
 
   return (
-    <Col sm={6} xs={12}>
+    <Col xs={6}>
       <div
-        className={`passengers_luggage_innerContainer ${
+        className={`passengers_luggage_innerContainer  ${
           home === true ? 'ms-1' : 'ms-3'
         }`}
         style={{ marginLeft: home === true ? '5px !important' : '1rem' }}
       >
         <p className="title">{title}</p>
-        <div className="wrapper">
+        <div
+          className={`wrapper ${
+            completeBooking === true ? 'completeBookingCounter' : ''
+          }`}
+        >
           <div className="wrapper_btn">
             <img src={luggage} alt="passengerIcon" />
           </div>

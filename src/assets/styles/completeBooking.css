@@ -32,6 +32,7 @@
   pointer-events: none;
   width: 81.49px;
 }
+
 .main_container .middleLine.bottom_lineImg {
   top: 66%;
   pointer-events: none;
@@ -76,6 +77,15 @@
   color: var(--dark27);
   margin-bottom: 7px;
 }
+.complete_booking_container .title span {
+  opacity: 0.3;
+  color: #374157;
+  font-size: 13px;
+}
+/* .wrapper_select.baby_seat_styles option {
+  color: #374157;
+  opacity: 0.3;
+} */
 .passengers_luggage_innerContainer .wrapper {
   background: var(--white);
   border: 1px solid var(--yello);
@@ -83,6 +93,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  user-select: none;
+}
+.completeBookingCounter div {
+  margin: 0px 5px !important;
 }
 .passengers_luggage_innerContainer .wrapper_btn {
   padding: 10px;
@@ -106,6 +120,7 @@
   border: 1px solid #f9b233;
   border-radius: 10px;
   padding: 10px;
+  font-size: 15px;
 }
 .vehicleType_pickup_container .wrapper_select option {
   font-weight: 400;
@@ -259,6 +274,16 @@
   opacity: 0.3;
   margin-bottom: 0px;
   text-decoration: none;
+}
+.instructions_btns {
+  text-align: center;
+}
+.instructions_btns a:nth-of-type(1) {
+  flex: 1;
+}
+.instructions_btns a:nth-of-type(2) {
+  flex: 1.9;
+  margin-left: 10px;
 }
 .ordersummary_container .date_time {
   display: flex;

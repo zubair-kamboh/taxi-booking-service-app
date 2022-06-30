@@ -20,7 +20,7 @@ const WhatWeOffer = () => {
         letters, as opposed to using 'Content here, content here', making it
         look like readable English.
       </p>
-      <Row className="g-2">
+      <Row className="g-3">
         <WhatWeOfferCard
           icon={airTransfer}
           title="Airport Transportation"

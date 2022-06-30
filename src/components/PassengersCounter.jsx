@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Col } from 'react-bootstrap'
+import { Col, Form } from 'react-bootstrap'
 
 import HeaderButton from './HeaderButton'
 
@@ -21,37 +21,53 @@ import luggageIcon from '../assets/images/ordersummary_luggage.svg'
 import verticleLine from '../assets/images/order_summary_verticle _line.svg'
 import babyCarSeatIcon from '../assets/images/baby-car-seat.svg'
 import lineHalf from '../assets/images/line-half.svg'
+import flag from '../assets/images/phone-no-icon.png'
+import email from '../assets/images/email-input-icon.png'
 
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth'
 import AccessTimeIcon from '@mui/icons-material/AccessTime'
 import OrderSummaryIcons from './OrderSummaryIcons'
 
-const PassengersCounter = ({ title }) => {
+const PassengersCounter = ({ title, completeBooking, span }) => {
   return (
     <Col
-      sm={
-        title === 'Additional Instructions' || title === 'Order Summary'
+      xs={6}
+      lg={
+        title === 'Additional Instructions' ||
+        title === 'Order Summary' ||
+        title === 'Email'
           ? 12
           : 6
       }
-      xs={12}
     >
       <div
-        className={
+        className={` ${
+          completeBooking === true ? 'completeBookingCounter' : ''
+        } ${
           title === 'Passengers'
             ? 'passengers_luggage_innerContainer'
             : 'name_field_container'
-        }
+        }`}
         style={{
           marginLeft:
-            title === 'Last Name' || title === 'Time' ? '1rem' : '0px',
+            title === 'Last Name' || title === 'Time' || title === 'Baby Seat'
+              ? '1rem'
+              : '0px',
         }}
       >
-        <p className="title">{title}</p>
+        <p className="title">
+          {title} <span>{span}</span>
+        </p>
         {title === 'First Name' && <NameInput placeholder="First Name" />}
         {title === 'Last Name' && <NameInput placeholder="Last Name" />}
         {title === 'Date' && <CustomDatePicker />}
         {title === 'Time' && <CustomDatePicker timePicker={true} />}
+
+        {title === 'Phone No.' && (
+          <PhoneNo placeholder="+61-921-24187-1" span={span} />
+        )}
+        {title === 'Baby Seat' && <BabySeat />}
+        {title === 'Email' && <Email placeholder="Add Your Email" />}
 
         {title === 'Additional Instructions' && <AdditionalInstructions />}
         {title === 'Order Summary' && <OrderSummary />}
@@ -167,7 +183,7 @@ const AdditionalInstructions = () => {
           style={{ resize: 'none' }}
         />
       </div>
-      <div className="btns">
+      <div className="btns instructions_btns">
         <HeaderButton color="#FFFFFF" bg="#000000" title="Book For Later" />
         <HeaderButton color="#FFFFFF" bg="#F9B233" title="Book My Ride" />
       </div>
@@ -215,6 +231,38 @@ const OrderSummary = () => {
           </div>
         </div>
       </div>
+    </div>
+  )
+}
+
+const PhoneNo = ({ placeholder }) => {
+  return (
+    <div className="wrapper" style={{ display: 'flex', alignItems: 'center' }}>
+      <input type="number" placeholder={placeholder} className="name_input" />{' '}
+      <img src={flag} alt="phone no flag" />
+    </div>
+  )
+}
+const BabySeat = () => {
+  return (
+    <div className="vehicleType_pickup_container">
+      <div
+        className="wrapper_select baby_seat_styles "
+        style={{ width: '100%' }}
+      >
+        <Form.Select aria-label="Default select example">
+          <option>Yes</option>
+          <option value="1">No</option>
+        </Form.Select>
+      </div>
+    </div>
+  )
+}
+const Email = ({ placeholder }) => {
+  return (
+    <div className="wrapper" style={{ display: 'flex', alignItems: 'center' }}>
+      <input type="text" placeholder={placeholder} className="name_input" />
+      <img src={email} alt="email" />
     </div>
   )
 }

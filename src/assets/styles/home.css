@@ -6,9 +6,9 @@
 /* hero section start */
 .hero-container {
   background: url('../images/hero-bg.svg');
-  height: 80vh;
-  background-size: contain;
-  /* background-position: center; */
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-origin: center center;
   position: relative;
@@ -24,6 +24,7 @@
   border-radius: 10px;
   position: absolute;
   top: 50%;
+  left: 2%;
   transform: translateY(-50%);
 }
 .hero-container .form_container .get_instant_fare {
@@ -43,6 +44,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
+  flex-direction: row;
+}
+.hero-container .form_container .btns a:nth-of-type(1) {
+  width: 50%;
+}
+.hero-container .form_container .btns a:nth-of-type(2) {
+  width: 48%;
 }
 
 .form_container .passengers_luggage_hero_container {
@@ -52,7 +61,7 @@
 
 /* welcome section start */
 .welcome_container {
-  margin: 5rem 5rem 1rem 5rem;
+  margin: 2rem 5rem 0rem 5rem;
   text-align: center;
 }
 .welcome_container .what_we_offer {
@@ -119,8 +128,7 @@
 
 /* backgroundImgContainer */
 .backgroundImgContainer {
-  padding: 3rem 1rem;
-  margin: 5rem 1rem;
+  margin: 3rem 1rem 0rem;
   background-image: url('../images/car-bg.png');
   height: 50vh;
   background-size: contain;
@@ -151,7 +159,7 @@
 
 /* classes_and_rates */
 .classes_rates_container {
-  margin: 5rem 5rem 1rem 5rem;
+  margin: 2rem 5rem 0rem;
 }
 .classes_rates_container .classes_rates_card {
   background: #272727;
@@ -192,15 +200,15 @@
 
 /* Faq section */
 .faq_container {
-  margin: 5rem 5rem 1rem 5rem;
+  margin: 3rem 5rem 2rem;
 }
 .faq_inner_contianer {
   background: #efefef;
   border: 1px solid #d2d2d2;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.04);
   border-radius: 30px;
-  padding: 40px 50px;
+  padding: 30px 50px;
 }
 .faq_container .img_container {
   margin-bottom: 1rem;
@@ -213,7 +221,7 @@
   cursor: pointer;
 }
 .faq_container .faq_accordion {
-  margin: 5rem 0rem;
+  margin: 2rem 0rem 1rem;
 }
 .faq_container .accordion-button:not(.collapsed)::after {
   background-image: url('../images/faq-minus.png');
@@ -247,7 +255,7 @@
 .footer_container {
   background: #272727;
   color: var(--white);
-  padding: 9rem 0rem 2rem 0rem;
+  padding: 5rem 0rem 2rem;
 }
 .footer_container .footer_logo {
   font-weight: 600;
@@ -347,6 +355,7 @@
   }
   .form_container {
     margin-top: 500px;
+    left: 0%;
   }
   .hero-container {
     background-image: url('../images/hero-bg.png');
@@ -374,7 +383,7 @@
     transform: translateY(0%);
   }
   .welcome_specific {
-    margin-top: 800px;
+    margin-top: 500px;
   }
   .welcome_container .description {
     width: 100%;
@@ -387,7 +396,7 @@
     flex-direction: column;
   }
   .stack_luggage_passenger div {
-    width: 100% !important;
+    /* width: 100% !important; */
   }
   .classes_rates_container,
   .faq_container {
@@ -400,12 +409,15 @@
     padding: 0.5rem;
   }
   .destinations_container .right p {
-    font-size: 10px !important;
+    font-size: 12px !important;
   }
   .passengers_luggage_innerContainer.ms-3 {
     margin: 10px 0px !important;
   }
   .vehicleType_pickup_container .wrapper_select {
     margin: 10px 0px !important;
+  }
+  .vehicleType_pickup_container .wrapper_select select {
+    font-size: 12px !important;
   }
 }

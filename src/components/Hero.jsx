@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Row } from 'react-bootstrap'
+import { Button, Col, Modal, Row } from 'react-bootstrap'
 
 // icons
 import line from '../assets/images/line.png'
@@ -105,11 +105,11 @@ const Hero = ({ farePage, home }) => {
             />
           </div>
 
-          <Row style={{ marginBottom: '2rem' }} className="g-2">
+          <Row style={{ marginBottom: '1rem' }} className="g-2">
             {/* passengers_luggage */}
             <Col
               xs={12}
-              style={{ display: 'flex' }}
+              style={{ display: 'flex', flexDirection: 'row' }}
               className="stack_luggage_passenger"
             >
               <PassengersCounter title="Passengers" />
@@ -117,9 +117,9 @@ const Hero = ({ farePage, home }) => {
             </Col>
           </Row>
 
-          <Row style={{ marginBottom: '2rem' }} className="g-2">
+          <Row style={{ marginBottom: '1rem' }} className="g-2">
             {/* passengers_luggage */}
-            <Col xs={12} style={{ display: 'flex' }}>
+            <Col xs={12} style={{ display: 'flex', flexDirection: 'row' }}>
               <VehiclePickupSelect home={true} />
             </Col>
           </Row>

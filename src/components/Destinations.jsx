@@ -21,10 +21,6 @@ const Destinations = ({ from, to }) => {
           <img src={dot} alt="dot" className="dot" />
           <img src={dot} alt="dot" className="dot" />
           <img src={dot} alt="dot" className="dot" />
-          <img src={dot} alt="dot" className="dot" />
-          <img src={dot} alt="dot" className="dot" />
-          <img src={dot} alt="dot" className="dot" />
-          <img src={dot} alt="dot" className="dot" />
           <img src={downarrow} alt="downarrow" style={{ margin: '2px 0px' }} />
           <img
             src={dropoff}

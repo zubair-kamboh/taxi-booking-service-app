@@ -7,11 +7,20 @@
   z-index: 100;
 }
 
-.logo {
+.logo_container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding-left: 2rem;
   font-weight: 600;
   font-size: 24px;
-  color: var(--dark);
-  text-transform: uppercase;
+  color: var(--dark27);
+}
+.logo_container:hover {
+  color: var(--dark27);
+}
+.logo_container img {
+  margin-right: 0.5rem;
 }
 
 .navlinks {
@@ -32,5 +41,16 @@
   font-size: 15px;
   color: var(--white);
   border-radius: 10px;
-  padding: 12px 26px;
+  padding: 16px 22px !important;
+}
+
+@media (max-width: 986px) {
+  .logo_container {
+    padding-left: 0rem;
+    font-size: 18px;
+  }
+
+  .logo_container img {
+    width: 40px;
+  }
 }

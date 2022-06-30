@@ -15,6 +15,7 @@ import NameDate from '../components/NameDate'
 import InstructionsOrder from '../components/InstructionsOrder'
 import VehiclePickupSelect from '../components/VehiclePickupSelect'
 import RecentTripsContainer from '../components/RecentTripsContainer'
+import EmailPhone from '../components/EmailPhone'
 
 const CompleteBooking = () => {
   return (
@@ -63,11 +64,15 @@ const CompleteBooking = () => {
             <Col
               lg={5}
               xs={12}
-              style={{ display: 'flex' }}
+              style={{
+                display: 'flex',
+                flexDirection: 'row',
+                alignItems: 'center',
+              }}
               className="stack_luggage_passenger"
             >
-              <PassengersCounter title="Passengers" />
-              <LuggageCounter title="Luggage Pieces" />
+              <PassengersCounter title="Passengers" completeBooking={true} />
+              <LuggageCounter title="Luggage Pieces" completeBooking={true} />
             </Col>
             <Col lg={2} sm={0}></Col>
             {/* vehicle_pickup_type */}
@@ -83,13 +88,10 @@ const CompleteBooking = () => {
 
           {/* first/last name & date/time row */}
           <NameDate />
+          {/* email phone row */}
+          <EmailPhone />
           {/* instructions order row */}
           <InstructionsOrder />
-          <img
-            src={middleLine}
-            className="middleLine bottom_lineImg"
-            alt="middleLine"
-          />
         </div>
 
         <RecentTripsContainer />
