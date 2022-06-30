@@ -31,7 +31,13 @@ import OrderSummaryIcons from './OrderSummaryIcons'
 const PassengersCounter = ({ title, completeBooking, span }) => {
   return (
     <Col
-      xs={6}
+      xs={
+        title === 'Email' ||
+        title === 'Additional Instructions' ||
+        title === 'Order Summary'
+          ? 12
+          : 6
+      }
       lg={
         title === 'Additional Instructions' ||
         title === 'Order Summary' ||

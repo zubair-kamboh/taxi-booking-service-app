@@ -13,7 +13,7 @@ const NameDate = () => {
       <Col
         lg={5}
         xs={12}
-        style={{ display: 'flex' }}
+        style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}
         className="stack_luggage_passenger"
       >
         <PassengersCounter title="Date" />

@@ -6,7 +6,7 @@ import HeaderButton from '../components/HeaderButton'
 import Hero from '../components/Hero'
 import RecentTrips from '../components/RecentTrips'
 import lineFull from '../assets/images/line-full.svg'
-import middleLine from '../assets/images/middle-line.svg'
+import middleLine from '../assets/images/middle-line.small.png'
 
 const FarePage = () => {
   return (
@@ -61,19 +61,10 @@ const FarePage = () => {
             }}
             alt="middleLine"
           />
-          <img
-            src={middleLine}
-            className="middleLine"
-            style={{
-              position: 'absolute',
-              top: '29%',
-              left: '50%',
-              transform: 'translateX(-50%)',
-            }}
-            alt="middleLine"
-          />
 
-          <HeaderButton title="Load More" color="#FFFFFF" bg="#F9B233" />
+          <div style={{ display: 'flex', marginTop: '100px' }}>
+            <HeaderButton title="Load More" color="#FFFFFF" bg="#F9B233" />
+          </div>
         </div>
       </div>
     </Container>

@@ -16,7 +16,10 @@ const Hero = ({ farePage, home }) => {
       {farePage === true ? (
         <Row className="gx-5">
           <Col lg={5} xs={12}>
-            <div className="form_container">
+            <div
+              className="form_container"
+              style={{ position: 'static', transform: 'translate(0%)' }}
+            >
               {/* <Form> */}
               <h3 className="get_instant_fare">Get Instant Fare</h3>
               <img src={line} alt="line" className="horizental_line" />
@@ -31,23 +34,21 @@ const Hero = ({ farePage, home }) => {
                 />
               </div>
 
-              <Row style={{ marginBottom: '2rem' }} className="g-2">
+              <Row style={{ marginBottom: '1rem' }} className="g-2">
                 {/* passengers_luggage */}
                 <Col
                   xs={12}
-                  style={{
-                    display: 'flex',
-                  }}
-                  className={farePage === true ? 'stack_luggage_passenger' : ''}
+                  style={{ display: 'flex', flexDirection: 'row' }}
+                  className="stack_luggage_passenger"
                 >
                   <PassengersCounter title="Passengers" />
                   <LuggageCounter title="Luggage Pieces" home={true} />
                 </Col>
               </Row>
 
-              <Row style={{ marginBottom: '2rem' }} className="g-2">
+              <Row style={{ marginBottom: '1rem' }} className="g-2">
                 {/* passengers_luggage */}
-                <Col xs={12} style={{ display: 'flex' }}>
+                <Col xs={12} style={{ display: 'flex', flexDirection: 'row' }}>
                   <VehiclePickupSelect home={true} />
                 </Col>
               </Row>
