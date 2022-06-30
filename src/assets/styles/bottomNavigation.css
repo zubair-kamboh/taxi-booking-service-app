@@ -79,3 +79,13 @@
     display: flex;
   }
 }
+@media screen and (max-width: 420px) {
+  .bottom_navigation_container .btn1 {
+    font-size: 12px;
+    padding: 16px 10px;
+  }
+  .bottom_navigation_container .btn2 {
+    font-size: 12px;
+    padding: 16px 10px;
+  }
+}
