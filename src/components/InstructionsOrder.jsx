@@ -4,7 +4,7 @@ import PassengersCounter from './PassengersCounter'
 
 const InstructionsOrder = () => {
   return (
-    <Row style={{ marginBottom: '2rem' }}>
+    <Row style={{ marginBottom: '2rem' }} className="g-2">
       <Col lg={5} xs={12}>
         <PassengersCounter title="Additional Instructions" />
       </Col>

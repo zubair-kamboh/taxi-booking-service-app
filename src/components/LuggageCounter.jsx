@@ -10,10 +10,10 @@ const LuggageCounter = ({ title, home, completeBooking }) => {
   return (
     <Col xs={6}>
       <div
-        className={`passengers_luggage_innerContainer  ${
-          home === true ? 'ms-1' : 'ms-3'
-        }`}
-        style={{ marginLeft: home === true ? '5px !important' : '1rem' }}
+        className={`passengers_luggage_innerContainer ${
+          completeBooking ? 'select_margins' : ''
+        }  ${home === true ? 'ms-1' : 'ms-0'}`}
+        style={{ marginLeft: home === true ? '5px !important' : '0px' }}
       >
         <p className="title">{title}</p>
         <div

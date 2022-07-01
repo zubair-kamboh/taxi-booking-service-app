@@ -3,7 +3,7 @@ import PassengersCounter from './PassengersCounter'
 
 const EmailPhone = () => {
   return (
-    <Row style={{ marginBottom: '2rem' }}>
+    <Row style={{ marginBottom: '2rem' }} className="g-2">
       <Col lg={5} xs={12} style={{ display: 'flex', alignItems: 'center' }}>
         <PassengersCounter title="Phone No." span="(Preferred Whatsapp)" />
         <PassengersCounter title="Baby Seat" />

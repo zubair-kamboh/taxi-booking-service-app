@@ -8,6 +8,7 @@
   position: fixed;
   bottom: 0px;
   display: none;
+  border-top: 1px solid black;
 }
 .bottom_navigation_container p {
   margin-bottom: 0px;

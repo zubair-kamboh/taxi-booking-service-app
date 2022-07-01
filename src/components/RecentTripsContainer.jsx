@@ -30,7 +30,7 @@ const RecentTripsContainer = () => {
       <RecentTrips />
       <RecentTrips />
 
-      <div className="d-flex">
+      <div className="d-flex" style={{ marginTop: '2.5rem' }}>
         <HeaderButton title="Load More" color="#FFFFFF" bg="#F9B233" />
       </div>
     </div>

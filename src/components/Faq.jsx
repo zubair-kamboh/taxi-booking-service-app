@@ -1,14 +1,25 @@
 import searchIcon from '../assets/images/faq-search-icon.png'
 import Accordion from 'react-bootstrap/Accordion'
+import { useState } from 'react'
 
 const Faq = () => {
+  const [showInput, setShowInput] = useState(true)
   return (
     <div className="welcome_container faq_container">
       <h5 className="what_we_offer">FAQ</h5>
       <h3 className="welcome_to_us">HAVE ANY QUESTION</h3>
       <div className="faq_inner_contianer">
-        <div className="img_container">
-          <img src={searchIcon} alt="search-icon" className="img-fluid" />
+        <div
+          className="img_container"
+          style={{ background: showInput ? 'var(--white)' : '' }}
+        >
+          {showInput && <input type="text" />}
+          <img
+            src={searchIcon}
+            onClick={() => setShowInput(!showInput)}
+            alt="search-icon"
+            className="img-fluid"
+          />
         </div>
 
         <div className="faq_accordion">

@@ -4,7 +4,7 @@ import PassengersCounter from './PassengersCounter'
 
 const NameDate = () => {
   return (
-    <Row style={{ marginBottom: '2rem' }}>
+    <Row style={{ marginBottom: '2rem' }} className="g-2">
       <Col lg={5} xs={12} style={{ display: 'flex' }}>
         <PassengersCounter title="First Name" />
         <PassengersCounter title="Last Name" />

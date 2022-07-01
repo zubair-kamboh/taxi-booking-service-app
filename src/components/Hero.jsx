@@ -31,6 +31,7 @@ const Hero = ({ farePage, home }) => {
                 <Destinations
                   from="Pick Up From (Airport, Port, Address)"
                   to="Drop Off To (Airport, Port, Address)"
+                  calculator={true}
                 />
               </div>
 
@@ -103,6 +104,7 @@ const Hero = ({ farePage, home }) => {
             <Destinations
               from="Pick Up From (Airport, Port, Address)"
               to="Drop Off To (Airport, Port, Address)"
+              calculator={true}
             />
           </div>
 
