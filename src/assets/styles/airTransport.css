@@ -177,3 +177,8 @@
     margin-top: 700px;
   }
 }
+@media screen and (max-width: 500px) {
+  .air_transport_container .hero-container {
+    background-size: contain;
+  }
+}

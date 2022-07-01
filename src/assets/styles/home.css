@@ -211,7 +211,6 @@
   padding: 30px 50px;
 }
 .faq_container .img_container {
-  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -221,7 +220,7 @@
   cursor: pointer;
 }
 .faq_container .faq_accordion {
-  margin: 2rem 0rem 1rem;
+  margin: 1rem 0rem;
 }
 .faq_container .accordion-button:not(.collapsed)::after {
   background-image: url('../images/faq-minus.png');
@@ -419,5 +418,13 @@
   }
   .vehicleType_pickup_container .wrapper_select select {
     font-size: 12px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero-container .btns a {
+    padding: 12px 16px !important;
+  }
+  .vehicleType_pickup_container .wrapper_select select {
+    font-size: 10px !important;
   }
 }
