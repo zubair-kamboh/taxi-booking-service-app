@@ -213,7 +213,6 @@
 .faq_inner_contianer .img_container {
   display: flex;
   align-items: center;
-  /* background-color: white; */
   padding: 0px 10px;
   width: 20%;
   margin-left: auto;

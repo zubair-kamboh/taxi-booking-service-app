@@ -1,0 +1,32 @@
+[debug] [2022-07-01T13:44:31.472Z] ----------------------------------------------------------------------
+[debug] [2022-07-01T13:44:31.474Z] Command:       /usr/local/bin/firebase /home/zubair/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2022-07-01T13:44:31.474Z] CLI Version:   11.1.0
+[debug] [2022-07-01T13:44:31.474Z] Platform:      linux
+[debug] [2022-07-01T13:44:31.474Z] Node Version:  v16.15.0
+[debug] [2022-07-01T13:44:31.475Z] Time:          Fri Jul 01 2022 18:44:31 GMT+0500 (Pakistan Standard Time)
+[debug] [2022-07-01T13:44:31.475Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-01T13:44:31.537Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-01T13:44:31.538Z] > authorizing via signed-in user (zubairkamboh9010@gmail.com)
+[debug] [2022-07-01T13:44:31.538Z] [iam] checking project taxi-booking-service-app for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-01T13:44:31.540Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/taxi-booking-service-app:testIamPermissions [none]
+[debug] [2022-07-01T13:44:31.540Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/taxi-booking-service-app:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-01T13:44:33.919Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/taxi-booking-service-app:testIamPermissions 200
+[debug] [2022-07-01T13:44:33.920Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/taxi-booking-service-app:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-01T13:44:33.924Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/taxi-booking-service-app [none]
+[debug] [2022-07-01T13:44:35.150Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/taxi-booking-service-app 200
+[debug] [2022-07-01T13:44:35.150Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/taxi-booking-service-app {"projectId":"taxi-booking-service-app","projectNumber":"123653963207","displayName":"taxi-booking-service-app","name":"projects/taxi-booking-service-app","resources":{"hostingSite":"taxi-booking-service-app"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'taxi-booking-service-app'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-07-01T13:44:35.159Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/taxi-booking-service-app [none]
+[debug] [2022-07-01T13:44:35.953Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/taxi-booking-service-app 200
+[debug] [2022-07-01T13:44:35.954Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/taxi-booking-service-app {"projectId":"taxi-booking-service-app","projectNumber":"123653963207","displayName":"taxi-booking-service-app","name":"projects/taxi-booking-service-app","resources":{"hostingSite":"taxi-booking-service-app"},"state":"ACTIVE"}
+[debug] [2022-07-01T13:44:35.959Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/123653963207/sites/taxi-booking-service-app/versions [none]
+[debug] [2022-07-01T13:44:35.960Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/123653963207/sites/taxi-booking-service-app/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-07-01T13:44:38.060Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/123653963207/sites/taxi-booking-service-app/versions 200
+[debug] [2022-07-01T13:44:38.061Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/123653963207/sites/taxi-booking-service-app/versions {"name":"projects/123653963207/sites/taxi-booking-service-app/versions/56dd7e8dc4413ada","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[taxi-booking-service-app]: beginning deploy... 
+[info] i  hosting[taxi-booking-service-app]: found 60 files in build 
+[debug] [2022-07-01T13:44:38.104Z] [hosting] uploading with 200 concurrency

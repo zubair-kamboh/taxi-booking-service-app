@@ -3,7 +3,7 @@ import Accordion from 'react-bootstrap/Accordion'
 import { useState } from 'react'
 
 const Faq = () => {
-  const [showInput, setShowInput] = useState(true)
+  const [showInput, setShowInput] = useState(false)
   return (
     <div className="welcome_container faq_container">
       <h5 className="what_we_offer">FAQ</h5>
