@@ -54,6 +54,7 @@ const CompleteBooking = () => {
                         borderRadius: '0px 10px 10px 0px',
                         cursor: 'pointer',
                       }}
+                      className="current_location_complete_booking"
                     >
                       <img src={currentLocation} alt="currentLocation" />
                     </div>
@@ -81,6 +82,7 @@ const CompleteBooking = () => {
                         borderRadius: '0px 10px 10px 0px',
                         cursor: 'pointer',
                       }}
+                      className="current_location_complete_booking"
                     >
                       <img src={currentLocation} alt="currentLocation" />
                     </div>

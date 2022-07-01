@@ -499,3 +499,9 @@
     padding-left: 0.25rem !important;
   }
 }
+@media screen and (max-width: 550px) {
+  .current_location_complete_booking {
+    padding: 5px !important;
+    border-radius: 0px 6px 6px 0px !important;
+  }
+}
