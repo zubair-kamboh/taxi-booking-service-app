@@ -7,8 +7,12 @@
 .air_transport_container .hero-container {
   background-image: url('../images/airport-transfer-hero.svg');
   background-position: bottom;
-  /* height: 55vh; */
 }
+
+.hero-container .hero_outer_wrapper .tranparent_hero_box {
+  display: none;
+}
+
 .air_transport_container .form_container {
   top: 65%;
   transform: translateY(-65%);
