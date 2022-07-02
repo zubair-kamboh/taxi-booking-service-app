@@ -92,44 +92,55 @@ const Hero = ({ farePage, home }) => {
           </Col>
         </Row>
       ) : (
-        <div className="form_container">
-          {/* <Form> */}
-          <h3 className="get_instant_fare">Get Instant Fare</h3>
-          <img src={line} alt="line" className="horizental_line" />
-
-          <div
-            style={{ margin: '10px 0px' }}
-            className="hero_passenger_luggage_container"
-          >
-            <Destinations
-              from="Pick Up From (Airport, Port, Address)"
-              to="Drop Off To (Airport, Port, Address)"
-              calculator={true}
-            />
+        <div className="hero_outer_wrapper">
+          <div className="tranparent_hero_box">
+            <h3>
+              “Most Reliable
+              <br />
+              <span>Taxi Service</span>
+              <br />
+              in Sydney”
+            </h3>
           </div>
+          <div className="form_container">
+            {/* <Form> */}
+            <h3 className="get_instant_fare">Get Instant Fare</h3>
+            <img src={line} alt="line" className="horizental_line" />
 
-          <Row style={{ marginBottom: '1rem' }} className="g-2">
-            {/* passengers_luggage */}
-            <Col
-              xs={12}
-              style={{ display: 'flex', flexDirection: 'row' }}
-              className="stack_luggage_passenger"
+            <div
+              style={{ margin: '10px 0px' }}
+              className="hero_passenger_luggage_container"
             >
-              <PassengersCounter title="Passengers" />
-              <LuggageCounter title="Luggage Pieces" home={true} />
-            </Col>
-          </Row>
+              <Destinations
+                from="Pick Up From (Airport, Port, Address)"
+                to="Drop Off To (Airport, Port, Address)"
+                calculator={true}
+              />
+            </div>
 
-          <Row style={{ marginBottom: '1rem' }} className="g-2">
-            {/* passengers_luggage */}
-            <Col xs={12} style={{ display: 'flex', flexDirection: 'row' }}>
-              <VehiclePickupSelect home={true} />
-            </Col>
-          </Row>
+            <Row style={{ marginBottom: '1rem' }} className="g-2">
+              {/* passengers_luggage */}
+              <Col
+                xs={12}
+                style={{ display: 'flex', flexDirection: 'row' }}
+                className="stack_luggage_passenger"
+              >
+                <PassengersCounter title="Passengers" />
+                <LuggageCounter title="Luggage Pieces" home={true} />
+              </Col>
+            </Row>
 
-          <div className="btns">
-            <HeaderButton color="#FFFFFF" bg="#DC2827" title="Book My Ride" />
-            <HeaderButton color="#FFFFFF" bg="#F9B233" title="Get Fare" />
+            <Row style={{ marginBottom: '1rem' }} className="g-2">
+              {/* passengers_luggage */}
+              <Col xs={12} style={{ display: 'flex', flexDirection: 'row' }}>
+                <VehiclePickupSelect home={true} />
+              </Col>
+            </Row>
+
+            <div className="btns">
+              <HeaderButton color="#FFFFFF" bg="#DC2827" title="Book My Ride" />
+              <HeaderButton color="#FFFFFF" bg="#F9B233" title="Get Fare" />
+            </div>
           </div>
         </div>
       )}

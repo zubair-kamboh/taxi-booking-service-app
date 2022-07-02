@@ -13,7 +13,7 @@ const Faq = () => {
           className="img_container"
           style={{ background: showInput ? 'var(--white)' : '' }}
         >
-          {showInput && <input type="text" />}
+          {showInput && <input type="text" autoFocus />}
           <img
             src={searchIcon}
             onClick={() => setShowInput(!showInput)}
