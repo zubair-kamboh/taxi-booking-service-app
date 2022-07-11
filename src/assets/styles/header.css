@@ -28,6 +28,10 @@
   justify-content: space-evenly;
 }
 
+.services_dropdown_styles .nav-link {
+  color: #000000 !important;
+}
+
 .navlink {
   font-weight: 400;
   font-size: 15px;

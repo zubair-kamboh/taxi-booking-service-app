@@ -5,6 +5,10 @@ import '../assets/styles/header.css'
 import HeaderButton from './HeaderButton'
 import logo from '../assets/images/site-logo.png'
 const Header = () => {
+  let activeStyle = {
+    fontWeight: 'bold',
+  }
+
   return (
     <Navbar className="header" expand="lg">
       <Container style={{ background: '#f9b233' }}>
@@ -15,59 +19,60 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto navlinks align-items-center">
-            <NavLink className="navlink" to="/">
+            <NavLink
+              className="navlink"
+              to="/"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
               Home
             </NavLink>
-            <NavLink className="navlink" to="/fare-page">
+            <NavLink
+              className="navlink"
+              to="/fare-page"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
               Fare
+            </NavLink>
+
+            <NavLink
+              className="navlink"
+              to="/about-us"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
+              About
+            </NavLink>
+            <NavLink
+              className="navlink"
+              to="/contact-us"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
+              Contact
             </NavLink>
             <NavDropdown
               title="Services"
               style={{ color: '#000000 !important' }}
               id="nav-dropdown"
-              className="navlink"
+              className="navlink services_dropdown_styles"
             >
-              <NavDropdown.Item eventKey="4.1" href="/airport-transport">
+              <Link to="/airport-transport" className="dropdown-item">
                 Airport Transport
-              </NavDropdown.Item>
-              <NavDropdown.Item eventKey="4.1" href="/private-car">
+              </Link>
+              <Link to="/private-car" className="dropdown-item">
                 Private Car
-              </NavDropdown.Item>
-              <NavDropdown.Item eventKey="4.1" href="/point-to-point">
+              </Link>
+              <Link to="/point-to-point" className="dropdown-item">
                 Point to Point
-              </NavDropdown.Item>
-              <NavDropdown.Item eventKey="4.1" href="/corporate-transportation">
+              </Link>
+              <Link to="/corporate-transportation" className="dropdown-item">
                 Corporate Transportation
-              </NavDropdown.Item>
-              <NavDropdown.Item eventKey="4.1" href="/limo-service">
+              </Link>
+              <Link to="/limo-service" className="dropdown-item">
                 Limo Service
-              </NavDropdown.Item>
-              <NavDropdown.Item eventKey="4.1" href="/party-limosine">
-                Party Service
-              </NavDropdown.Item>
+              </Link>
+              <Link to="/party-limosine" className="dropdown-item">
+                Party Limosine
+              </Link>
             </NavDropdown>
-
-            {/* <NavLink className="navlink" to="/private-car">
-              Private Car
-            </NavLink>
-            <NavLink className="navlink" to="/point-to-point">
-              Point to Point
-            </NavLink>
-            <NavLink className="navlink" to="/corporate-transportation">
-              Corporate
-            </NavLink>
-            <NavLink className="navlink" to="/limo-service">
-              Limo
-            </NavLink>
-            <NavLink className="navlink" to="/party-limosine">
-              Party
-            </NavLink> */}
-            <NavLink className="navlink" to="/about-us">
-              About
-            </NavLink>
-            <NavLink className="navlink" to="/contact-us">
-              Contact
-            </NavLink>
             <HeaderButton
               title="Book My Ride"
               color="#FFFFFF"
